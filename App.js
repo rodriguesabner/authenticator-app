@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView, StatusBar} from 'react-native';
 import {Routes} from './src/routes';
-import Spinner from 'react-native-loading-spinner-overlay';
 
 const App = () => {
   return (

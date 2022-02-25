@@ -7,10 +7,8 @@ import {api} from '../../services/api';
 const Camera = ({navigation}) => {
   const onSuccess = async e => {
     try {
-      const {data} = await api.get('/otp/parse', {
-        params: {
-          otpuri: e.data,
-        },
+      const {data} = await api.post('/otp/parse', {
+        uri: e.data,
       });
 
       navigation.navigate('RegisterProvider', {

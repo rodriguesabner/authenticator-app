@@ -40,8 +40,8 @@ const RegisterProvider = ({route, navigation}) => {
             height={100}
           />
         )}
-        <Provider>{otpData.provider}</Provider>
-        <UserLabel>{otpData.user}</UserLabel>
+        <Provider>{otpData.issuer}</Provider>
+        <UserLabel>{otpData.label}</UserLabel>
 
         <Code>{otpData.token}</Code>
       </View>
